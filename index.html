@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get To Know You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="floating-hearts"></div>
+
+  <!-- LOGIN -->
+  <section id="loginPage" class="page active">
+    <div class="login-card">
+      <div class="lock">🔐</div>
+
+      <p class="mini">PRIVATE QUESTIONNAIRE</p>
+      <h1>Get To Know You ♡</h1>
+
+      <p class="subtitle">
+        aku ternyata masih banyak nggak tahunya tentang kamu...
+        jadi kali ini, cerita sedikit tentang kamu ke aku yaa 🥹
+      </p>
+
+      <input
+        type="password"
+        id="pinInput"
+        placeholder="Masukkan PIN / password"
+        autocomplete="off"
+      >
+
+      <button id="enterBtn">MASUK ♡</button>
+
+      <p id="loginError" class="error-text"></p>
+    </div>
+  </section>
+
+
+  <!-- INTRO -->
+  <section id="introPage" class="page">
+    <div class="content-card">
+      <span class="emoji-big">💌</span>
+
+      <p class="mini">A LITTLE THING FOR YOU</p>
+      <h1>Haiii, kamu 🤍</h1>
+
+      <p>
+        aku mau kenal kamu lebih jauh.
+        bukan karena aku nggak percaya sama kamu,
+        tapi karena kadang aku malu buat nanya langsung 😭
+      </p>
+
+      <p>
+        jadi jawab sebisanya aja yaa.
+        nggak ada jawaban yang salah dan
+        kamu juga boleh skip kalau ada yang nggak nyaman dijawab.
+      </p>
+
+      <button class="next-btn">MULAI ✨</button>
+    </div>
+  </section>
+
+
+  <!-- SECTION 1 -->
+  <section id="section1" class="page">
+    <div class="form-card">
+
+      <div class="progress">01 / 05</div>
+
+      <h2>🪪 Tentang Kamu</h2>
+      <p class="section-subtitle">
+        hal-hal kecil yang pengen aku tahu tentang kamu.
+      </p>
+
+      <label>Nama / panggilan yang paling kamu suka dipanggil?</label>
+      <input class="answer" data-key="Panggilan yang disukai">
+
+      <label>Ulang tahun kamu? 🎂</label>
+
+      <div class="birthday-row">
+        <select class="answer" data-key="Tanggal ulang tahun">
+          <option value="">Tanggal</option>
+          <option>1</option><option>2</option><option>3</option>
+          <option>4</option><option>5</option><option>6</option>
+          <option>7</option><option>8</option><option>9</option>
+          <option>10</option><option>11</option><option>12</option>
+          <option>13</option><option>14</option><option>15</option>
+          <option>16</option><option>17</option><option>18</option>
+          <option>19</option><option>20</option><option>21</option>
+          <option>22</option><option>23</option><option>24</option>
+          <option>25</option><option>26</option><option>27</option>
+          <option>28</option><option>29</option><option>30</option>
+          <option>31</option>
+        </select>
+
+        <select class="answer" data-key="Bulan ulang tahun">
+          <option value="">Bulan</option>
+          <option>Januari</option>
+          <option>Februari</option>
+          <option>Maret</option>
+          <option>April</option>
+          <option>Mei</option>
+          <option>Juni</option>
+          <option>Juli</option>
+          <option>Agustus</option>
+          <option>September</option>
+          <option>Oktober</option>
+          <option>November</option>
+          <option>Desember</option>
+        </select>
+      </div>
+
+      <label>Kamu anak ke berapa?</label>
+      <input class="answer" data-key="Anak ke">
+
+      <label>Kamu tinggal di kota/daerah mana?</label>
+      <input class="answer" data-key="Tempat tinggal">
+
+      <label>Hobi yang paling kamu suka?</label>
+      <input class="answer" data-key="Hobi">
+
+      <button class="next-btn">LANJUT →</button>
+    </div>
+  </section>
+
+
+  <!-- SECTION 2 -->
+  <section id="section2" class="page">
+    <div class="form-card">
+
+      <div class="progress">02 / 05</div>
+
+      <h2>🎀 Kesukaan Kamu</h2>
+
+      <label>Makanan favorit kamu? 🍜</label>
+      <input class="answer" data-key="Makanan favorit">
+
+      <label>Minuman favorit kamu? 🥤</label>
+      <input class="answer" data-key="Minuman favorit">
+
+      <label>Warna yang paling kamu suka? 🎨</label>
+      <input class="answer" data-key="Warna favorit">
+
+      <label>Musik / lagu yang akhir-akhir ini sering kamu dengerin? 🎧</label>
+      <input class="answer" data-key="Musik yang sering didengar">
+
+      <label>Film / series / anime favorit?</label>
+      <input class="answer" data-key="Film atau series favorit">
+
+      <label>Kalau dikasih waktu luang, paling pengen ngapain?</label>
+      <textarea class="answer" data-key="Kegiatan saat waktu luang"></textarea>
+
+      <button class="next-btn">LANJUT →</button>
+    </div>
+  </section>
+
+
+  <!-- SECTION 3 -->
+  <section id="section3" class="page">
+    <div class="form-card">
+
+      <div class="progress">03 / 05</div>
+
+      <h2>🌷 Tentang Diri Kamu</h2>
+
+      <label>
+        Kalau lagi bad mood, biasanya kamu ngapain?
+      </label>
+      <textarea class="answer" data-key="Kalau bad mood"></textarea>
+
+      <label>
+        Kalau lagi punya masalah, kamu lebih suka cerita atau diem dulu?
+      </label>
+      <textarea class="answer" data-key="Saat punya masalah"></textarea>
+
+      <label>
+        Hal kecil apa yang gampang bikin kamu senang?
+      </label>
+      <textarea class="answer" data-key="Hal yang bikin senang"></textarea>
+
+      <label>
+        Hal apa yang biasanya bikin kamu nggak nyaman?
+      </label>
+      <textarea class="answer" data-key="Hal yang bikin tidak nyaman"></textarea>
+
+      <label>
+        Kebiasaan kecil kamu yang mungkin orang lain jarang tahu?
+      </label>
+      <textarea class="answer" data-key="Kebiasaan kecil"></textarea>
+
+      <label>
+        Ada sesuatu yang lagi kamu pengenin sekarang?
+      </label>
+      <textarea class="answer" data-key="Yang sedang diinginkan"></textarea>
+
+      <button class="next-btn">LANJUT →</button>
+    </div>
+  </section>
+
+
+  <!-- SECTION 4 -->
+  <section id="section4" class="page">
+    <div class="form-card">
+
+      <div class="progress">04 / 05</div>
+
+      <h2>💗 Tentang Kita</h2>
+
+      <label>
+        Hal apa yang bikin kamu nyaman ngobrol sama aku?
+      </label>
+      <textarea class="answer" data-key="Yang bikin nyaman ngobrol"></textarea>
+
+      <label>
+        Kamu lebih suka aku manggil kamu apa?
+      </label>
+      <input class="answer" data-key="Panggilan dari aku">
+
+      <label>
+        Kalau kamu lagi kesel, kamu lebih suka aku ngapain?
+      </label>
+      <textarea class="answer" data-key="Saat sedang kesal"></textarea>
+
+      <label>
+        Ada hal kecil dari aku yang kamu suka?
+      </label>
+      <textarea class="answer" data-key="Hal kecil dari aku yang disukai"></textarea>
+
+      <label>
+        Satu hal yang pengen kamu lakukan bareng aku?
+      </label>
+      <textarea class="answer" data-key="Hal yang ingin dilakukan bersama"></textarea>
+
+      <button class="next-btn">LANJUT →</button>
+    </div>
+  </section>
+
+
+  <!-- SECTION 5 -->
+  <section id="section5" class="page">
+    <div class="form-card">
+
+      <div class="progress">05 / 05</div>
+
+      <h2>🫣 Yang Selama Ini Belum Terucap</h2>
+
+      <p class="special-text">
+        bagian ini nggak harus dijawab kalau kamu nggak nyaman.
+        tapi kalau selama ini ada sesuatu yang pengen kamu tanyain,
+        ceritain, atau sampaikan ke aku tapi kamu malu,
+        takut, bingung mulai dari mana, atau nggak berani...
+        kamu bisa tulis di sini.
+      </p>
+
+      <label>
+        💭 Ada hal yang selama ini pengen kamu tanyain ke aku
+        tapi belum pernah kamu tanyain?
+      </label>
+
+      <textarea
+        class="answer big-answer"
+        data-key="Pertanyaan yang selama ini ingin ditanyakan"
+        placeholder="tulis aja di sini... aku bakal baca semuanya 🤍"
+      ></textarea>
+
+      <label>
+        💌 Ada sesuatu yang sebenarnya pengen kamu bilang ke aku
+        tapi selama ini belum bisa bilang?
+      </label>
+
+      <textarea
+        class="answer big-answer"
+        data-key="Hal yang belum pernah disampaikan"
+        placeholder="nggak harus panjang..."
+      ></textarea>
+
+      <label>
+        🫶 Ada cerita tentang kamu yang pengen aku tahu?
+      </label>
+
+      <textarea
+        class="answer big-answer"
+        data-key="Cerita yang ingin dibagikan"
+        placeholder="cerita sebebas kamu..."
+      ></textarea>
+
+      <button id="finishBtn">SELESAI ♡</button>
+
+    </div>
+  </section>
+
+
+  <!-- RESULT -->
+  <section id="resultPage" class="page">
+    <div class="result-card">
+
+      <span class="emoji-big">🥹</span>
+
+      <p class="mini">YOUR LITTLE PROFILE</p>
+      <h1>Makasih udah cerita 🤍</h1>
+
+      <p>
+        sekarang aku jadi tahu sedikit lebih banyak tentang kamu.
+        dan ternyata hal-hal kecil tentang kamu juga menarik buat aku tahu.
+      </p>
+
+      <div id="profileResult"></div>
+
+      <div class="from-liyaa">
+        <span>💌</span>
+        <p>
+          makasih yaa udah mau jawab semuanya.
+          nggak harus selalu cerita banyak,
+          tapi kalau suatu hari kamu pengen cerita,
+          aku bakal seneng dengerinnya.
+        </p>
+        <strong>— dari Liyaa ♡</strong>
+      </div>
+
+      <button id="whatsappBtn">📱 KIRIM HASILNYA</button>
+
+      <button id="restartBtn" class="secondary-btn">
+        ISI LAGI
+      </button>
+
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
